@@ -1,0 +1,42 @@
+<!--pages/find/index.wxml-->
+<view class="container">
+    <find-tabs animated="{{true}}">
+        <view slot="tab0">
+            <l-card 
+                type="cover"
+                image="/images/card.png"
+            >
+                <view class="content">
+                   <text>上岛赫本时光】700㎡的花园餐厅，9.9元抢购10元优惠券，周六周日通用！</text>
+                   <view class="footer">
+                        <view class="price">
+                           <l-price unit="￥" count="9.90" unit-size="36" unit-color="#fc5467" count-size="36" count-color="#fc5467"  l-unit-class="persent" l-count-class="persent current"></l-price>
+                           <l-price unit="¥" count="100"  delete="{{true}}" unit-size="22" count-size="22" unit-color="#999" count-color="#999"></l-price>
+                       </view>
+                       <view class="buy">
+                           <text class="sell-out">已售:256</text>
+                           <l-button shape="semicircle" type="default" size="mini">立即购买</l-button>
+                       </view>
+                   </view>
+                </view>
+            </l-card>
+        </view>
+        <view slot="tab1">
+            <l-card type="cover" image="/images/card.png">
+                <view class="content">
+                    <text>上岛赫本时光】700㎡的花园餐厅，9.9元抢购10元优惠券，周六周日通用！</text>
+                    <view class="footer">
+                        <view class="price">
+                            <l-price unit="￥" count="9.90" unit-size="36" unit-color="#fc5467" count-size="36" count-color="#fc5467" l-unit-class="persent" l-count-class="persent current"></l-price>
+                            <l-price unit="¥" count="100" delete="{{true}}" unit-size="22" count-size="22" unit-color="#999" count-color="#999"></l-price>
+                        </view>
+                        <view class="buy">
+                            <text class="sell-out">已售:289</text>
+                            <l-button shape="semicircle" type="default" size="mini">立即购买</l-button>
+                        </view>
+                    </view>
+                </view>
+            </l-card>
+        </view>
+    </find-tabs>
+</view>

@@ -1,0 +1,10 @@
+<!--components/drop-down/index.wxml-->
+<view class="item-container">
+    <view class="item">
+        <text class="title">{{title}}</text>
+        <l-icon l-class="drop-icon {{open&&'select_img_roate'}}" name="down" size="28" color="#a7a7a7" bindtap="toggle"></l-icon>
+    </view>
+    <view class="dropdown {{open?'down':'up'}}">
+        <slot name="content"></slot>
+    </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "l-button":"/dist/button/index"
+  },
+  "navigationBarTitleText":"兴趣"
+}

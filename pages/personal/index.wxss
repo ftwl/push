@@ -1,0 +1,11 @@
+.container .list-group {
+  background-color: #fff;
+  padding-left: 28rpx;
+  padding-right: 28rpx;
+}
+.container .top {
+  margin-top: 28rpx;
+}
+.iconfont {
+  font-family: j-icon !important;
+}

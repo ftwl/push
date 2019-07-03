@@ -1,0 +1,30 @@
+<svg id="_-s-王冠" data-name="-s-王冠" xmlns="http://www.w3.org/2000/svg" width="47" height="27" viewBox="0 0 47 27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fe9800;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fec800;
+      }
+
+      .cls-3 {
+        fill: #ffda30;
+      }
+
+      .cls-4 {
+        fill: #fef34a;
+      }
+    </style>
+  </defs>
+  <path id="形状_2" data-name="形状 2" class="cls-1" d="M11.08,6.87L6.838,14.748l11.514-.606Z"/>
+  <path id="形状_2-2" data-name="形状 2" class="cls-1" d="M35.32,6.87l4.242,7.878-11.514-.606Z"/>
+  <path id="形状_1" data-name="形状 1" class="cls-2" d="M0.172,8.84L7.065,22.361v4.507H40.471V22.891L46.834,8.574,33.047,13.082,23.5,5.658l-10.34,7.954Z"/>
+  <rect id="矩形_3" data-name="矩形 3" class="cls-3" x="6.844" y="23.813" width="33.313" height="3.031"/>
+  <path id="多边形_2" data-name="多边形 2" class="cls-4" d="M28.273,14.14l-4.489-1.881-4.5,1.854,0.39-4.877L16.533,5.5l4.73-1.134L23.82,0.208l2.533,4.177,4.723,1.161L27.911,9.261Z"/>
+</svg>

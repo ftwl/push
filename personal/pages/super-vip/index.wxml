@@ -1,0 +1,72 @@
+<!--personal/pages/super-vip/index.wxml-->
+<view class="vip-container">
+    <view class="card">
+        <view class="card-image">
+            <view class="card-info">
+                <view class="title">
+                    <image src="https://tuiyixia.oss-cn-shanghai.aliyuncs.com/image/vip/vip-logo.png?OSSAccessKeyId=LTAINo4457UW83Sw&Expires=2881130547&Signature=G0HpxzvbgWwnJlFgDnBSDNsrZV8%3D" />
+                </view>
+                <view class="vip">
+                    <l-avatar size="90" open-data="{{['userAvatarUrl']}}"></l-avatar>
+                    <view class="user-info">
+                        <open-data class="nickname" type="userNickName" />
+                        <text wx:if="{{is_vip == false}}">尊享会员福利，赶快加入吧</text>
+                        <text wx:if="{{is_vip == true}}">2019-09-31 到期</text>
+                    </view>
+                </view>
+            </view>
+            <view class="right">
+                <text class="right-title">尊享VIP会员权益</text>
+                <view class="jion">
+                    <text class="jion-title">已加入会员</text>
+                    <text class="num">{{num}}人</text>
+                </view>
+            </view>
+        </view>
+        <view class="choose-vip">
+            <text class="title">选择会员</text>
+            <view class="choose-group">
+                <view wx:for="{{duration}}" wx:key="{{item.index}}" data-id="{{item.id}}" class="choose-item {{item.select?'active':''}}" bindtap="recharge">
+                    <text class="duration">{{item.time}}个月</text>
+                    <l-price
+                        unit="¥"
+                        count="{{item.price}}"
+                        unit-color="#a57459"
+                        count-color="#a57459"
+                        unit-size="30"
+                        count-size="44"
+                        l-unit-class="weight"
+                        l-count-class="weight"
+                    ></l-price>
+                    <l-price
+                        unit="¥"
+                        count="{{item.deletePrice}}"
+                        unit-color="#b8b8b8"
+                        count-color="#b8b8b8"
+                        unit-size="18"
+                        count-size="22"
+                        delete="{{true}}"
+                        l-unit-class="weight"
+                        l-count-class="weight"
+                        l-class="delete-price"
+                    ></l-price>
+                </view>
+            </view>
+        </view>
+        <l-button size="large" width="694" height="88" shape="semicircle" l-class="pay-button">
+            {{is_vip?'立即续费':'立即开通'}}
+        </l-button>
+    </view>
+    <view class="introduce">
+        <view class="introduce-title">会员权益</view>
+        <view class="grid-group">
+            <l-grid  row-num="3">
+                <l-grid-item  l-grid-item="item"  wx:for="{{equities}}"  wx:key="{{index}}" key="{{index}}" slot="{{index}}">
+                    <l-icon size="48" name="{{item.icon}}" l-class="iconfont"></l-icon>
+                    <text class="grid-title">{{item.title}}</text>
+                    <text class="grid-desc">{{item.desc}}</text>
+                </l-grid-item>
+            </l-grid>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,23 @@
+<!--components/O-card/index.wxml-->
+<view class="container">
+    <view class="title">
+        <view class="image">
+            <image src="{{image}}" />
+        </view>
+        <view class="describe">
+            <text class="info">新贝音乐餐厅90代100元券,商品优惠更多</text>
+            <text class="rules">限购3件</text>
+        </view>
+    </view>
+    <view class="price">
+        <l-price
+            unit="¥"
+            count="{{price}}"
+            unit-size="22"
+            count-size="28"
+            unit-color="#fc5366"
+            count-color="#fc5366"
+            l-count-class="right"
+            ></l-price>
+    </view>
+</view>

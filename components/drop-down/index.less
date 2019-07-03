@@ -1,0 +1,33 @@
+.item-container{
+    .item{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        .title{
+            margin-right: 10rpx;
+            font-size: 28rpx;
+        }
+    }
+    .dropdown{
+        width: 100%;
+        overflow: hidden;
+        transition: height .3s;
+    }
+}
+
+.up{
+    height: 0rpx;
+}
+
+.down{
+    height: 60rpx;
+}
+
+.select_img_roate{
+    transform: rotate(180deg);
+}
+
+.drop-icon{
+    transition: transform .3s;
+}

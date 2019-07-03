@@ -1,0 +1,61 @@
+<!--pages/personal-info/index.wxml-->
+<view class="personal-container">
+    <view class="personal-group  border-top">
+        <l-list title="头像"  is-link="{{false}}">
+            <l-avatar slot="right-section" size="68" open-data="{{['userAvatarUrl']}}"></l-avatar>
+        </l-list>
+        <l-list 
+            title="昵称"
+            is-link="{{false}}"
+        >
+            <open-data  slot="right-section" type="userNickName"></open-data>
+        </l-list>
+        <l-list
+            title="我的二维码"
+            is-link="{{false}}"
+        >
+            <l-icon slot="right-section" l-class="iconfont" color="#999" name="erweima"></l-icon>
+        </l-list>
+    </view>
+    <view class="hint">
+        <text>完善个人信息,获得更多精准红包</text>
+    </view>
+    <view class="personal-group">
+        <l-list
+            title="性别"
+            is-link="{{false}}"
+        >
+            <open-data slot="right-section" type="userGender" lang="zh_CN" />
+        </l-list>
+        <l-list
+            title="生日"
+            is-link="{{false}}"
+        >
+            <view bindtap="showTimePicker" slot="right-section">{{year}}年{{month}}月{{day}}日</view>
+        </l-list>
+        <l-list
+            title="兴趣"
+            url="/pages/interest/index"
+        ></l-list>
+        <l-list
+            title="职业"
+        ></l-list>
+        <l-list
+            title="手机号"
+        ></l-list>
+        <l-list
+            title="推荐人"
+            is-link="{{false}}"
+        ></l-list>
+    </view>
+    <l-popup locked="{{true}}" show="{{timePicker}}" content-align="bottom">
+        <view class="modal">
+            <time-picker
+                value="{{value}}"
+                bind:TimePickerCancel="TimePickerCancel"
+                bind:TimePickerSure="TimePickerSure"
+                bind:TimePickerChange="TimePickerChange"
+            ></time-picker>
+        </view>
+    </l-popup>
+</view>

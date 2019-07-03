@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "l-avatar":"/dist/avatar/index",
+    "l-price":"/dist/price/index",
+    "l-button":"/dist/button/index",
+    "l-list":"/dist/list/index"
+  },
+  "navigationBarTitleText": "商户会员"
+}

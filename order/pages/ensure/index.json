@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "O-card":"/components/O-card/index",
+    "l-list":"/dist/list/index",
+    "j-count-selector":"/components/count-selector/index",
+    "l-checkbox":"/dist/checkbox/index",
+    "l-checkbox-group":"/dist/checkbox-group/index",
+    "l-countdown":"/dist/countdown/index",
+    "l-price":"/dist/price/index",
+    "l-button":"/dist/button/index"
+  },
+  "navigationBarTitleText": "订单确认"
+}

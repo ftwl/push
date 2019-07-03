@@ -1,0 +1,85 @@
+<!--personal/pages/change/index.wxml-->
+<view class="change-container">
+    <view class="info">
+        <view class="left">
+            <text class="title">可提现金额</text>
+            <l-price
+                unit="¥"
+                count="9.9"
+                unit-color="#fff"
+                count-color="#fff"
+                unit-size="22"
+                count-size="32"
+                l-unit-class="unit-distance"
+            ></l-price>
+            <view class="total">
+                <text>累计收益</text>
+                <l-price
+                    unit="¥"
+                    count="15.31"
+                    unit-color="#fff"
+                    count-color="#fff"
+                    unit-size="22"
+                    count-size="22"
+                    l-unit-class="unit-distance"
+                ></l-price>
+            </view>
+        </view>
+        <view class="right">
+            <l-button
+                 shape="semicircle"
+                 plain="{{true}}"
+                 l-class="deposit"
+                 special="{{true}}"
+                 size="mini">提现</l-button>
+        </view>
+    </view>
+    <view class="select-time">
+        <view class="time">{{year}}年{{month}}月</view>
+        <l-icon size="24" color="#b8b8b8" name="down" bindtap="toggleTimePicker"></l-icon>
+        <l-popup locked="{{true}}" show="{{showTimePicker}}"  content-align="bottom">
+            <view class="modal">
+                <time-picker 
+                    days="[]" 
+                    value="{{value}}"
+                    bind:TimePickerCancel="TimePickerCancel" 
+                    bind:TimePickerSure="TimePickerSure" 
+                    bind:TimePickerChange="TimePickerChange"
+                ></time-picker>
+            </view>
+        </l-popup>
+    </view>
+    <view class="bill">
+        <view class="particulars">
+            <text class="left">收入</text>
+            <l-price
+             unit="¥"
+             count="5.34"
+             unit-size="22"
+             count-size="22"
+            ></l-price>
+        </view>
+        <view class="particulars">
+            <text class="left">支出</text>
+            <l-price
+              unit="¥"
+              count="6.28"
+              unit-size="22"
+              count-size="22"
+            ></l-price>
+        </view>
+    </view>
+    <view class="list-group">
+        <l-list 
+            title="会飞的鱼的红包"
+            desc="2019-10-01 09:50:30"
+            is-link="{{false}}"
+            l-class-desc="list-desc"
+        >
+            <text slot="right-section" class="earning">+0.01元</text>
+        </l-list>
+        <l-list title="会飞的鱼的红包" desc="2019-10-01 09:50:30" is-link="{{false}}" l-class-desc="list-desc">
+            <text slot="right-section" class="expense">-0.01元</text>
+        </l-list>
+    </view>
+</view>

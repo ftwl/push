@@ -1,0 +1,10 @@
+<!--components/J-swiper/index.wxml-->
+<view class="container">
+    <swiper style="width:{{width}}rpx;height:{{height}}rpx;" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{500}}">
+        <block wx:key="{{index}}" wx:for="{{imgUrls}}">
+            <swiper-item>
+                <image class="swiper-image" src="{{item}}" />
+            </swiper-item>
+        </block>
+    </swiper>
+</view>

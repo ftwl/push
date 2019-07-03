@@ -1,0 +1,16 @@
+<!--components/time-picker/index.wxml-->
+<view class="popup-header">
+    <text class="cancel" bindtap="toggleTimePickerCancel">取消</text>
+    <text class="sure" bindtap="toggleTimePickerSure">确定</text>
+</view>
+<picker-view class="picker" value="{{value}}" indicator-class="indicator" bindchange="bindChange">
+    <picker-view-column wx:if="{{years.length>0}}">
+        <view wx:for="{{years}}" wx:key="{{item}}" class="options">{{item}}年</view>
+    </picker-view-column>
+    <picker-view-column  wx:if="{{months.length>0}}">
+        <view wx:for="{{months}}" wx:key="{{item}}" class="options">{{item}}月</view>
+    </picker-view-column>
+    <picker-view-column  wx:if="{{days.length>0}}">
+        <view wx:for="{{days}}" wx:key="{{item}}" class="options">{{item}}日</view>
+    </picker-view-column>
+</picker-view>

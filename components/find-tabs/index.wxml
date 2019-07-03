@@ -1,0 +1,15 @@
+<!--components/find-tabs/index.wxml-->
+<view class="tab-container">
+    <view class="tab-card">
+        <text data-id="0" bindtap="changeTabbar" class="cell  {{index == 0 ? 'active' : ''}}">最新</text>
+        <text data-id="1" bindtap="changeTabbar" class="cell  {{index == 1 ? 'active' : ''}}">附近</text>
+    </view>
+    <view class="item">
+        <view class="tab-item {{index == 0 ? '' :'hidden'}}">
+            <slot name="tab0"></slot>
+        </view>
+        <view class="tab-item  {{index == 1 ? '' :'hidden'}}">
+            <slot name="tab1"></slot>
+        </view>
+    </view>
+</view>

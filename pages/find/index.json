@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "find-tabs":"/components/find-tabs/index",
+    "l-card":"/dist/card/index",
+    "l-price":"/dist/price/index",
+    "l-button":"/dist/button/index"
+  },
+  "navigationBarBackgroundColor": "#ff3e62",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText":"发现"
+}

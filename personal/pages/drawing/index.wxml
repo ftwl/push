@@ -1,0 +1,7 @@
+<!--personal/pages/drawing/index.wxml-->
+<view class="drawing-container">
+    <text class="drawing-title">提现到微信零钱</text>
+    <view class="drawing">
+        <text class="drawing-text">提现金额</text>
+    </view>
+</view>

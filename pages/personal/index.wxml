@@ -1,0 +1,17 @@
+<!--pages/personal/index.wxml-->
+
+<view class="container">
+  <personal-header></personal-header>
+  <wallet class="wallet"></wallet>
+  <view class="list-group">
+      <l-list title="订单" icon="dingdan" url="/pages/details/index" l-class-icon="iconfont"></l-list>
+      <l-list title="红包" icon="hongbao" l-class-icon="iconfont"></l-list>
+      <l-list title="任务" icon="renwuguanli" l-class-icon="iconfont"></l-list>
+      <l-list title="邀请码" icon="yaoqingma"  l-class-icon="iconfont"></l-list>
+  </view>
+  <view class="list-group top">
+      <l-list title="商务会员" icon="Member" l-class-icon="iconfont"></l-list>
+      <l-list title="区域代理" icon="woyaochengweiquyudaili" l-class-icon="iconfont"></l-list>
+      <l-list title="客服" icon="kefu" l-class-icon="iconfont"></l-list>
+  </view>
+</view>

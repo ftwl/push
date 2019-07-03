@@ -1,0 +1,7 @@
+<!--components/reminder/index.wxml-->
+<view class="reminder">
+    <view class="prefix" wx:if="{{prefix}}">{{name}}</view>
+    <view class="body {{prefix == true ? '' : 'left'}}">
+        <text>{{content}}</text>
+    </view>
+</view>

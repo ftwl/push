@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "J-swiper":"/components/J-swiper/index",
+    "l-price":"/dist/price/index",
+    "l-icon":"/dist/icon/index",
+    "J-card":"/components/J-card/index",
+    "l-button":"/dist/button/index",
+    "l-card":"/dist/card/index",
+    "card":"/components/card/index"
+  },
+  "navigationBarTitleText": "发现详情"
+}

@@ -1,0 +1,64 @@
+.container {
+  width: 100%;
+  padding-bottom: 100rpx;
+}
+.container .header {
+  background: #fff;
+}
+.container .left-content {
+  padding-left: 28rpx;
+}
+.container .distance {
+  width: 550rpx;
+}
+.container .generalize {
+  line-height: 66rpx;
+  font-size: 22rpx;
+  height: auto;
+  padding-left: 28rpx;
+  padding-right: 28rpx;
+}
+.container .generalize .filtrate {
+  color: #39b7f8;
+}
+.container .generalize .content {
+  color: #999;
+}
+.container .select {
+  background: #fff;
+}
+.container .editor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: #fff;
+  padding-left: 28rpx;
+}
+.container .publish {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+}
+.camera {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.camera .add-icon {
+  height: 70rpx;
+  width: 70rpx;
+  margin-top: 10rpx;
+}
+.camera .add-text {
+  margin-top: 6rpx;
+  font-size: 22rpx;
+  color: #999;
+}
+.textarea {
+  margin-bottom: 20rpx;
+}

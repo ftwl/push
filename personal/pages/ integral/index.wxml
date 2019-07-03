@@ -1,0 +1,50 @@
+<!--personal/pages/ integral/index.wxml-->
+<view class="integral-container">
+    <view class="info">
+        <view class="left">
+            <text>当前金币</text>
+            <view class="glod">
+                <view class="glod-icon">
+                    <l-icon  size="40" color="#F0C364" name="coin-copy"  l-class="iconfont"></l-icon>
+                </view>
+                <text class="glod-text">
+                    <text>9999</text>
+                </text>
+            </view>
+        </view>
+        <view class="right">
+            <text class="rules">金币规则</text>
+            <l-button 
+                shape="semicircle"
+                plain="{{true}}"
+                size="mini"
+                width="140"
+                height="48"
+            >
+                兑换商城
+            </l-button>
+        </view>
+    </view>
+    <view class="select-time">
+        <view class="time">{{year}}年{{month}}月</view>
+        <l-icon size="24" color="#b8b8b8" name="down" bindtap="toggleTimePicker"></l-icon>
+        <l-popup locked="{{true}}" show="{{showTimePicker}}" content-align="bottom">
+            <view class="modal">
+                <time-picker days="[]" value="{{value}}" bind:TimePickerCancel="TimePickerCancel" bind:TimePickerSure="TimePickerSure" bind:TimePickerChange="TimePickerChange"></time-picker>
+            </view>
+        </l-popup>
+    </view>
+    <view class="list-group">
+        <l-list
+            title="签到奖励"
+            desc="2019-10 09:58:30"
+            is-link="{{false}}"
+            l-class-desc="list-desc"
+        >
+            <text slot="right-section" class="earning">+10金币</text>
+        </l-list>
+        <l-list title="抢红包消耗" desc="2019-10 09:58:30" is-link="{{false}}" l-class-desc="list-desc">
+            <text slot="right-section" class="expense">-10金币</text>
+        </l-list>
+    </view>
+</view>

@@ -1,0 +1,25 @@
+<!--components/wallet/index.wxml-->
+<view class="container">
+    <view class="package">
+        <l-icon name="wallet"  l-class="iconfont"></l-icon>
+        <text>零钱</text>
+        <l-price 
+            unit="¥" 
+            l-unit-class="price" 
+            l-count-class="price" 
+            unit-size="30"  
+            count-size="30" 
+            count="25.52"></l-price>
+    </view>
+    <view class="package">
+        <l-icon name="coin-copy" l-class="iconfont"></l-icon>
+        <text>金币</text>
+        <l-price 
+            unit="" 
+            l-unit-class="price" 
+            l-count-class="price"  
+            unit-size="30"  
+            count-size="30" 
+            count="1000"></l-price>
+    </view>
+</view>

@@ -1,0 +1,40 @@
+<!--components/find-card/index.wxml-->
+<view class="card-container">
+    <view wx:if="{{image.length!=0}}" class="image">
+        <image src="{{image}}" />
+    </view>
+    <view class="title">
+        <text>{{title}}</text>
+    </view>
+    <view class="actions">
+        <view class="price">
+            <l-price
+                unit="¥"
+                count="{{presentPrice}}"
+                unit-color="#fc5366"
+                count-color="#fc6366"
+                unit-size="32"
+                count-size="32"
+                l-count-class="weight left"
+                l-unit-class="weight"
+            ></l-price>
+            <l-price
+                unit="¥"
+                count="{{currentPrice}}"
+                unit-color="#b8b8b8"
+                count-color="#b8b8b8"
+                unit-size="22"
+                count-size="22"
+                delete="{{true}}"
+            ></l-price>
+        </view>
+        <view class="buy">
+            <text class="sell">已售:{{sell}}</text>
+            <l-button 
+                size="mini"
+                shape="semicircle"
+                width="160"
+                height="54">立即购买</l-button>
+        </view>
+    </view>
+</view>

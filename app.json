@@ -1,0 +1,86 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/publish/index",
+    "pages/find/index",
+    "pages/personal/index"
+  ],
+  "subPackages": [
+    {
+      "root": "packet",
+      "pages": [
+        "pages/red-packet/index"
+      ]
+    },
+    {
+      "root": "order",
+      "pages": [
+        "pages/order-details/index",
+        "pages/ensure/index",
+        "pages/details/index"
+      ]
+    },
+    {
+      "root": "find",
+      "pages": [
+        "pages/find-details/index"
+      ]
+    },
+    {
+      "root": "personal",
+      "pages": [
+        "pages/personal-info/index",
+        "pages/interest/index",
+        "pages/change/index",
+        "pages/ integral/index",
+        "pages/business-vip/index",
+        "pages/super-vip/index",
+        "pages/drawing/index"
+      ]
+    }
+  ],
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#fc5366",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tab/package@grey.png",
+        "selectedIconPath": "images/tab/package@red.png",
+        "text": "抢红包"
+      },
+      {
+        "pagePath": "pages/publish/index",
+        "iconPath": "images/tab/publish@grey.png",
+        "selectedIconPath": "images/tab/publish@red.png",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/find/index",
+        "iconPath": "images/tab/find@grey.png",
+        "selectedIconPath": "images/tab/find@red.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/personal/index",
+        "iconPath": "images/tab/personal@grey.png",
+        "selectedIconPath": "images/tab/personal@red.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#f5f5f5",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "推一下",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

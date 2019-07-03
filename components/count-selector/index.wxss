@@ -1,0 +1,42 @@
+/* components/count-selector/index.wxss */
+.container-count{
+    display: flex;
+    flex-direction: row;
+    width: 190rpx;
+    height: 54rpx;
+    align-items: center;
+    justify-content: space-between;
+    border: 1rpx solid #eeeeee;
+    border-radius: 54rpx;
+}
+
+.container-count .symbol{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 54rpx;
+    height: 54rpx;
+}
+
+.container-count .symbol text{
+    height: 48rpx;
+    font-size: 36rpx;
+}
+
+.container-count .disabled{
+    color: #999999;
+}
+
+.container-count .abled{
+    color: #333333;
+}
+
+.container-count .count{
+    text-align: center;
+    width: 82rpx;
+    height: 54rpx;
+    font-size: 24rpx;
+    border-left:1rpx solid #eeeeee;
+    border-right:1rpx solid #eeeeee;
+}

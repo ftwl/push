@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "personal-header":"/components/personal-header/index",
+    "wallet":"/components/wallet/index",
+    "l-list":"/dist/list/index"
+  },
+  "navigationBarBackgroundColor": "#ff3e62",
+  "navigationBarTextStyle": "white"
+}

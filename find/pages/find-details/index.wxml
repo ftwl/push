@@ -1,0 +1,138 @@
+<!--pages/find-details/index.wxml-->
+<view class="container">
+    <view class="swiper">
+        <J-swiper imgUrls="{{imgUrls}}"></J-swiper>
+        <view class="conformation">
+            <view class="info">
+                <view class="price">
+                    <l-price 
+                        unit="¥" 
+                        count="9.90" 
+                        unit-size="36" 
+                        count-size="36"
+                        unit-color="#fc5366"
+                        count-color="#fc5366"
+                        l-class="present"
+                        l-unit-class="weight"
+                        l-count-class="weight"></l-price>
+                    <l-price 
+                        unit="¥" 
+                        count="100"
+                        delete="{{true}}"
+                        unit-size="22"
+                        count-size="22"
+                        unit-color="#999"
+                        count-color="#999"></l-price>
+                </view>
+                <view class="love">
+                    <l-icon name="icon4" l-class="iconfont" size="22"></l-icon>
+                    <text>3396喜欢</text>
+                </view>
+            </view>
+            <view class="title">
+                <text>上岛赫本时光】700㎡的花园餐厅，9.9元抢购10元优惠券，周六周日通用！</text>
+            </view>
+            <view class="sales">
+                <view class="counter">
+                    <text>已售256件</text>
+                    <text class="limit">限购3件</text>
+                </view>
+                <view class="residue">
+                    <text>只剩40件</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <J-card
+        title="商家详情"
+    >
+        <view slot="content">
+            <view class="content">
+                <text>上岛赫本时光花园餐厅</text>
+            </view>
+            <view class="content">
+                <text>使用时间:09:00-22:30</text>
+            </view>
+            <view class="content">
+                <text>商家电话:0513-87272277</text>
+                <l-button
+                    shape="semicircle"
+                    plain="{{true}}"
+                    size="mini"
+                    width="88"
+                    height="44"
+                    >拨打</l-button>
+            </view>
+            <view class="content">
+                <text>如皋海阳路310号中山大厦二楼</text>
+                <l-button shape="semicircle" plain="{{true}}" size="mini" width="88" height="44">导航</l-button>
+            </view>
+            <view class="content">
+                <text>商家资质信息展示</text>
+                <l-button shape="semicircle" plain="{{true}}"  size="mini" width="88" height="44">查看</l-button>
+            </view>
+        </view>
+    </J-card>
+    <J-card
+        title="更多优惠"
+        name="youhuiquan"
+    >
+        <scroll-view slot="content" scroll-x="true" style="width:100%; white-space: nowrap;">
+           <view class="card">
+               <card
+                 image="/images/swiper/2.jpg"
+                 title="【花花烤肉班】最后一个月!29元抢购价值145元优惠券"
+                ></card>
+           </view>
+            <view class="card">
+               <card 
+                image="/images/swiper/2.jpg"
+                title="【花花烤肉班】最后一个月!29元抢购价值145元优惠券"></card>
+           </view>
+            <view class="card">
+               <card 
+                image="/images/swiper/2.jpg"
+                title="【花花烤肉班】最后一个月！29元抢购价值145元优惠券"></card>
+           </view>
+        </scroll-view>
+    </J-card>
+    <J-card
+        title="购买须知"
+    >
+        <view slot="content">
+            <view class="notes">
+                <text class="title">有效期:</text>
+                <text class="substance">·2019.6.1至2019.6.30（周末、法定节假日通用)</text>
+            </view>
+            <view class="notes">
+                <text class="title">使用时间:</text>
+                <text class="substance">·10:30至营业时间结束</text>
+            </view>
+            <view class="notes">
+                <text class="title">使用规则:</text>
+                <text class="substance">·团购用户不可同时享受商家其他优惠</text>
+                <text class="substance">·酒水饮料问题请致电商家咨询，以商家反馈为准</text>
+                <text class="substance">·该券不支持退款</text>
+            </view>
+        </view>
+    </J-card>
+    <view class="footer">
+        <view class="left">
+            <view class="item">
+                <l-icon name="user" size="28"></l-icon>
+                <text>首页</text>
+            </view>
+        </view>
+        <view class="left">
+            <view class="item">
+                <l-icon name="customer-service" size="28"></l-icon>
+                <text>客服</text>
+            </view>
+        </view>
+        <l-button 
+            size="medium"
+            shape="semicircle"
+            width="400"
+            l-class="buy">立即购买</l-button>
+    </view>
+</view>

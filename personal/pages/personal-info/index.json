@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "l-list":"/dist/list/index",
+    "l-avatar":"/dist/avatar/index",
+    "l-icon":"/dist/icon/index",
+    "l-popup":"/dist/popup/index",
+    "l-button":"/dist/button/index",
+    "time-picker":"/components/time-picker/index"
+  },
+  "navigationBarTitleText": "个人信息"
+}

@@ -1,0 +1,134 @@
+.container {
+  padding-bottom: 100rpx;
+}
+.container .pay {
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  height: 100rpx;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 28rpx;
+  justify-content: space-between;
+  margin-top: 14rpx;
+}
+.info .address {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 22rpx;
+}
+.info .address .distance {
+  color: #999;
+  margin: 0 4rpx;
+}
+.details {
+  font-size: 22rpx;
+  color: #999999;
+  margin-top: 10rpx;
+}
+.details text {
+  margin-right: 10rpx;
+}
+.code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14rpx;
+}
+.code .code-desc {
+  font-size: 22rpx;
+}
+.code image {
+  margin: 14rpx 0;
+}
+.code .yard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+}
+.code .yard .pre {
+  margin-right: 10rpx;
+}
+.code .yard .pre::after {
+  content: ':';
+}
+.codes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.codes .text-code {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 6rpx;
+}
+.codes .text-code .text {
+  font-size: 28rpx;
+}
+.codes .text-code .text .text-prefix {
+  margin-right: 20rpx;
+}
+.codes .text-code .text .text-prefix::after {
+  content: ':';
+}
+.codes .comfirm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 560rpx;
+  height: 680rpx;
+  background: #fff;
+  border-radius: 10rpx;
+}
+.codes .comfirm .header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 22rpx;
+  width: 100%;
+  height: 86rpx;
+  border-bottom: 1rpx solid #dedede;
+}
+.codes .comfirm .code-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20rpx;
+}
+.codes .comfirm .code-content .text-code {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 36rpx;
+}
+.codes .comfirm .code-content .text-code .text-prefix {
+  margin-right: 20rpx;
+}
+.codes .comfirm .code-content .text-code .text-prefix::after {
+  content: ':';
+}
+.codes .comfirm .code-content image {
+  margin-top: 28rpx;
+}
+.close {
+  position: absolute;
+  top: 26rpx;
+  right: 26rpx;
+}

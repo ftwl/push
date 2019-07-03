@@ -1,0 +1,10 @@
+<!--components/J-card/index.wxml-->
+<view class="container">
+    <view  class="title">
+        <l-icon wx:if="{{name!=''}}" size="28" name="{{name}}"   l-class="iconfont"></l-icon>
+        <text>{{title}}</text>
+    </view>
+    <view class="content">
+        <slot name="content"></slot>
+    </view>
+</view>

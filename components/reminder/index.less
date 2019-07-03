@@ -1,0 +1,24 @@
+.reminder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10rpx;
+    .prefix{
+        display: inline-block;
+        width: 110rpx;
+        font-size: 24rpx;
+        text-align: justify;
+        text-align-last:justify;
+        color: #919699;
+        &::after{
+            content: ':';
+        }
+    }
+    .body{
+        margin-left: 20rpx;
+        font-size: 24rpx;
+    }
+    .left{
+        margin-left: 130rpx;
+    }
+}

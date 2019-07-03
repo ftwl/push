@@ -1,0 +1,62 @@
+.container .user-card {
+  position: absolute;
+  top: 88rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 294rpx;
+  height: 90rpx;
+  border-top-right-radius: 90rpx;
+  border-bottom-right-radius: 90rpx;
+  background: #fff;
+}
+.container .user-card image {
+  position: relative;
+  top: -44rpx;
+  left: 59rpx;
+  width: 47rpx;
+  height: 27rpx;
+}
+.container .user-card .avatar {
+  width: 68rpx;
+  height: 68rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.container .user-card .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-left: 20rpx;
+}
+.container .user-card .info .username {
+  font-size: 28rpx;
+}
+.container .user-card .info .city {
+  font-size: 22rpx;
+  color: #999;
+}
+.container .refresh {
+  position: absolute;
+  width: 54rpx;
+  height: 54rpx;
+  bottom: 126rpx;
+  left: 28rpx;
+}
+.container .vip {
+  position: absolute;
+  width: 54rpx;
+  height: 54rpx;
+  bottom: 126rpx;
+  right: 28rpx;
+}
+.container .package {
+  position: absolute;
+  width: 54rpx;
+  height: 54rpx;
+  right: 28rpx;
+  bottom: 42rpx;
+}

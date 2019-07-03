@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+      "l-icon":"/dist/icon/index",
+      "l-price":"/dist/price/index"
+  }
+}

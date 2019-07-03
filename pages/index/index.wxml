@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+        <map id="map" 
+          longitude="{{longitude}}" 
+          latitude="{{latitude}}" 
+          scale="{{scale}}"
+          show-location
+          circles="{{circles}}"
+          style="width: 100%; height: 100vh;"></map>
+          <view class="user-card">
+              <image src="/images/crown.svg" />
+              <open-data class="avatar" type="userAvatarUrl"></open-data>
+              <view class="info">
+                <open-data class="username" type="userNickName"></open-data>
+                <open-data class="city" type="userCity" lang="zh_TW"></open-data>
+              </view>
+          </view>
+          <image class="refresh" src="/images/map-icon/refresh.svg" />
+          <image class="vip" src="/images/map-icon/vip.svg"/>
+          <image class="package" src="/images/map-icon/package.svg"/>
+</view>

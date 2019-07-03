@@ -1,0 +1,127 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.container .packet {
+  width: 100%;
+  height: 275rpx;
+  z-index: -1;
+}
+.container .packet image {
+  width: 100%;
+  height: 100%;
+}
+.container .packet-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 225rpx;
+  width: 100%;
+  margin-top: -275rpx;
+}
+.container .packet-text .wish {
+  color: #EFDA90;
+  font-size: 24rpx;
+}
+.container .avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.container .own {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.container .model {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.container .model .image-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  background: #fff;
+}
+.container .model .image-text text {
+  padding: 18rpx 28rpx;
+}
+.container .model .image-text .image-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding-left: 28rpx;
+  padding-bottom: 18rpx;
+}
+.container .model .image-text .image-group image {
+  width: 218rpx;
+  height: 140rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+}
+.container .avatar-group {
+  width: 100%;
+  background: #fff;
+}
+.container .avatar-group .title {
+  font-size: 28rpx;
+  padding-left: 28rpx;
+}
+.container .avatar-group .avatar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .avatar-group .avatar .icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.container .discounts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20rpx;
+  background: #fff;
+  padding-top: 18rpx;
+  padding-bottom: 18rpx;
+  padding-left: 28rpx;
+  padding-right: 28rpx;
+}
+.container .discounts .title {
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+}
+.container .advertisement {
+  width: 100%;
+  height: 290rpx;
+  margin-top: 20rpx;
+}
+.avatar-text {
+  line-height: 30rpx !important;
+}
+.weight {
+  font-weight: bold !important;
+}
+.icon-image {
+  margin-right: 10rpx;
+}
+.right {
+  margin-right: 28rpx;
+}

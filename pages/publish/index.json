@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "l-input":"/dist/input/index",
+    "l-button":"/dist/button/index",
+    "l-list":"/dist/list/index",
+    "l-action-sheet":"/dist/action-sheet/index",
+    "l-textarea":"/dist/textarea/index",
+    "l-image-picker":"/dist/image-picker/index",
+    "l-icon":"/dist/icon/index"
+  },
+  "navigationBarBackgroundColor": "#ff3e62",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "发布"
+}

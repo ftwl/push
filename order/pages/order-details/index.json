@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "O-card":"/components/O-card/index",
+    "J-card":"/components/J-card/index",
+    "l-icon":"/dist/icon/index",
+    "reminder":"/components/reminder/index",
+    "l-popup":"/dist/popup/index",
+    "l-button":"/dist/button/index"
+  },
+  "navigationBarTitleText": "订单详情"
+}

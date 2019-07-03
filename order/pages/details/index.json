@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "l-tabs":"/dist/tabs/index",
+    "l-tabpanel":"/dist/tabpanel/index",
+    "details-card":"/components/details-card/index"
+  },
+  "navigationBarTitleText": "订单列表"
+}

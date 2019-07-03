@@ -1,0 +1,15 @@
+<!--components/personal/index.wxml-->
+<view class="container">
+    <view class="header">
+        <l-avatar bindtap="link" text="峰腾网络" placement="right" size="96" l-class="avatar" l-class-text="user" open-data="{{['userAvatarUrl','userNickName']}}"></l-avatar>
+    </view>
+    <view class="card">
+        <view class="vip">
+            <view class="icon">
+                <image src="/images/avatar/huangguan.png"></image>
+                <text>开通会员,尊享全部特权</text>
+            </view>
+        </view>
+        <l-button l-class="dredge"  shape="semicircle"  width="170" height="54">开通会员</l-button>
+    </view>
+</view>

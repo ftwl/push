@@ -1,0 +1,115 @@
+<!--pages/order-details/index.wxml-->
+<view class="container">
+   <O-card
+    image="/images/order.png"
+    ></O-card>
+    <J-card
+        title="商家信息"
+    >
+        <view slot="content">
+            <view class="info">
+                <text>新贝乐意大利餐厅</text>
+                <l-icon size="38" name="weibiaoti-"></l-icon>
+            </view>
+            <view class="info">
+                <view class="address">
+                    <l-icon size="22" name="address" color="#999"></l-icon>
+                    <text  class="distance">2.1km |</text>
+                    <text>崇川区工农路印象B1-14(迪卡侬斜对面)</text>
+                </view>
+            </view>
+        </view>
+    </J-card>
+    <J-card
+        wx:if="{{payed}}"
+        title="优惠券码"
+    >
+        <view slot="content">
+           <view class="details">
+               <text>{{count}}张可用</text>
+               <text>2019-07-10到期</text>
+           </view>
+           <view class="code" wx:if="{{ count === 1}}">
+               <text class="code-desc">商家扫码验券即可消费</text>
+               <image style="width:520rpx;height:110rpx;" src="/images/bar-code.png"/>
+               <image style="width:300rpx;height:300rpx;" src="/images/qr-code.png"/>
+               <view class="yard">
+                   <text class="pre">优惠码</text>
+                   <text>0011 7789 6699</text>
+               </view>
+           </view>
+           <view class="codes" wx:if="{{count > 1}}">
+               <view class="text-code">
+                   <view class="text">
+                       <text class="text-prefix">券码</text>
+                       <text>0011 7789 6699</text>
+                   </view>
+                   <l-icon color="#333" name="erweima" bindtap="toggleModal"></l-icon>
+               </view>
+                <view class="text-code">
+                   <view class="text">
+                       <text class="text-prefix">券码</text>
+                       <text>0011 7789 6699</text>
+                   </view>
+                   <l-icon color="#333" name="erweima" bindtap="toggleModal"></l-icon>
+               </view>
+                <l-popup show="{{modal}}"  locked="{{true}}"  content-align="center">
+                    <view class="comfirm">
+                        <view class="header">
+                            <text>请服务员扫描以下条形码验券</text>
+                            <l-icon name="close" color="#a7a7a7" size="26" l-class="close" bindtap="toggleModal"></l-icon>
+                        </view>
+                        <view class="code-content">
+                            <view class="text-code">
+                                <text class="text-prefix">券码</text>
+                                <text>0011 7789 6699</text>
+                            </view>
+                            <image style="width:474rpx;height:104rpx;" src="/images/bar-code.png" />
+                            <image style="width:300rpx;height:300rpx;" src="/images/qr-code.png" />
+                        </view>
+                    </view>
+                </l-popup>
+           </view>
+        </view>
+    </J-card>
+    <J-card
+        title="温馨提示"
+    >
+        <view slot="content">
+            <reminder
+                name="有效期"
+                content="2019.6.1至2019.6.30（周末、法定节假日通用)"
+                ></reminder>
+            <reminder 
+                name="使用时间" 
+                content="10:30—22:20"></reminder>
+            <reminder
+                name="适用范围"
+                content="除酒水、饮料外全场通用"
+                ></reminder>
+            <reminder
+                name="使用规则"
+                content="1、团购用户不可同时享受商家其他优惠"
+                ></reminder>
+            <reminder
+                prefix="{{false}}"
+                content="2、节假日不提供预约服务"
+                ></reminder>
+        </view>
+    </J-card>
+    <J-card
+        title="订单信息"
+    >
+        <view slot="content">
+            <reminder name="订单号"   content="5070429284"></reminder>
+            <reminder name="手机号" content="151****8208"></reminder>
+            <reminder name="付款时间" content="2019-4-24 12:42"></reminder>
+            <reminder name="数量" content="X1"></reminder>
+            <reminder name="总价" content="¥ 90"></reminder>
+            <reminder name="实付" content="¥ 90"></reminder>
+        </view>
+    </J-card>
+    <view wx:if="{{!payed}}"class="pay">
+        <l-button  size="long" height="100">立即购买</l-button>
+    </view>
+</view>

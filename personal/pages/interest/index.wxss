@@ -1,0 +1,42 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  border-top: 1rpx solid #dedede;
+}
+.container .hobby-group {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  margin-top: 25rpx;
+  margin-left: 25rpx;
+}
+.container .hobby-group .hobby {
+  display: inline-block;
+  width: 180rpx;
+  height: 70rpx;
+  font-size: 28rpx;
+  line-height: 70rpx;
+  text-align: center;
+  color: #999;
+  margin: 25rpx;
+  border: 2rpx solid #999;
+  border-radius: 70rpx;
+}
+.container .hobby-group .active {
+  border: 2rpx solid #fc5366;
+  background: #fc5366;
+  color: #fff;
+}
+.container .rules {
+  height: 78rpx;
+  font-size: 22rpx;
+  color: #999;
+  line-height: 78rpx;
+  text-align: center;
+}
+.save {
+  position: fixed !important;
+  bottom: 0;
+  font-size: 28rpx !important;
+}

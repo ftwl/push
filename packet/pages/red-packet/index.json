@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "l-avatar":"/dist/avatar/index",
+    "l-price":"/dist/price/index",
+    "J-swiper":"/components/J-swiper/index",
+    "l-icon":"/dist/icon/index",
+    "l-card":"/dist/card/index",
+    "find-card":"/components/find-card/index"
+  },
+  "navigationBarBackgroundColor": "#f55f4e",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": ""
+}

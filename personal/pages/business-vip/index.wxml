@@ -1,0 +1,50 @@
+<!--personal/pages/business-vip/index.wxml-->
+<view class="vip-container">
+    <view class="card">
+        <view class="card-image">
+            <view class="card-info">
+                <view class="title">
+                    <image src="https://tuiyixia.oss-cn-shanghai.aliyuncs.com/image/vip/business.png?OSSAccessKeyId=LTAINo4457UW83Sw&Expires=1575256706&Signature=9HGmwM6lhk3ifePP%2BwJLRgWq2yM%3D" />
+                </view>
+                <view class="vip">
+                    <l-avatar size="90"  open-data="{{['userAvatarUrl']}}"></l-avatar>
+                    <view class="user-info">
+                        <open-data class="nickname" type="userNickName" />
+                        <text wx:if="{{is_vip == false}}">开通商户会员,尊享全部特权</text>
+                        <text wx:if="{{is_vip == true}}">2019-09-31 到期</text>
+                    </view>
+                </view>
+            </view>
+            <view class="price">
+                <l-price 
+                    unit="¥" 
+                    count="360" 
+                    unit-color="#f5cf72" 
+                    count-color="#f5cf72"
+                    unit-size="30"
+                    count-size="40"
+                >
+                    <text class="cell"  slot="after">/年</text>
+                </l-price>
+            </view>
+        </view>
+        <l-button
+            size="large"
+            width="694"
+            height="88"
+            shape="semicircle"
+            l-class="pay-button"
+        >{{is_vip?'立即续费':'立即开通'}}</l-button>
+    </view>
+    <view class="introduce">
+        <view class="introduce-title">会员特权(10)</view>
+        <block wx:for="{{jurisdiction}}" wx:key="{{item.index}}">
+            <l-list  icon="{{item.icon}}"  l-class-icon="iconfont" is-link="{{false}}">
+                <view slot="left-section" class="left-section">
+                    <text class="subject">{{item.title}}</text>
+                    <text class="desc">{{item.desc}}</text>
+                </view>
+            </l-list>
+        </block>
+    </view>
+</view>

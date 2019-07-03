@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "l-icon":"/dist/icon/index",
+    "l-avatar":"/dist/avatar/index",
+    "l-button":"/dist/button/index"
+  }
+}

@@ -1,0 +1,14 @@
+<!--pages/interest/index.wxml-->
+<view class="container">
+    <view class="hobby-group">
+        <block wx:for="{{items}}"  wx:for-item="item" wx:key="{{item.id}}">
+            <text   class="hobby {{item.selected?'active':''}}" 
+                    data-value="{{item.value}}"  
+                    checked="{{item.selected}}" 
+                    data-index="{{index}}" 
+                    bindtap="selectHobby">{{item.name}}</text>
+        </block>
+    </view>
+    <view class="rules">至少选三项</view>
+    <l-button size="long" class="save">保存</l-button>
+</view>

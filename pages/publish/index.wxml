@@ -1,0 +1,74 @@
+<!--pages/publish/index.wxml-->
+<view class="container">
+    <view class="header">
+        <l-input label="红包主题" placeholder="请输入红包主题"/>
+        <l-input label="红包金额"  type="number" placeholder="1元起发"/>
+        <l-input label="红包个数" type="number" placeholder="单个最低0.05元" />
+        <l-list  
+            l-class-content="left-content" 
+            title="位置范围" 
+            is-link="{{false}}"
+            l-class-right="distance"
+            bind:lintap="toggleActionSheet">
+                <view slot="right-section">
+                    <text>{{text}}</text>
+                </view>
+            </l-list>
+        <l-action-sheet  open-api="{{false}}" show-cancel item-list="{{itemList}}" show="{{show}}"   
+            bind:linitemtap="lintapItem" bind:lincancel="lincancel" />
+    </view>
+    <view class="generalize">
+        <text class="filtrate">精准筛选</text>
+    </view>
+    <view hidden="{{false}}" class="select">
+        <l-list l-class-content="left-content" title="年龄状况" is-link="{{false}}" l-class-right="distance" bind:lintap="toggleAgeActionSheet">
+            <view slot="right-section">
+                <text>{{age}}</text>
+            </view>
+        </l-list>
+        <l-action-sheet open-api="{{false}}" show-cancel item-list="{{ageList}}" show="{{showAge}}" bind:linitemtap="ageItem" bind:lincancel="ageCancel" />
+        <l-list
+            l-class-content="left-content"
+            title="性别选择"
+            is-link="{{false}}"
+            l-class-right="distance"
+            bind:lintap="toggleSexActionSheet"
+        >
+            <view slot="right-section">
+                <text>{{sex}}</text>
+            </view>
+        </l-list>
+        <l-action-sheet
+            open-api="{{false}}"
+            show-cancel
+            item-list="{{sexList}}"
+            show="{{showSex}}"
+            bind:linitemtap="sexItem"
+            bind:lincancel="sexCancel"
+            ></l-action-sheet>
+    </view>
+    <view class="generalize">
+        <text class="content">推广内容</text>
+    </view>
+    <view class="editor">
+        <l-textarea
+            border="{{false}}"
+            maxlength="160"
+            placeholder="说说你推广内容吧……"
+            auto-height="{{true}}"
+            l-class="textarea"
+        ></l-textarea>
+        <l-image-picker size="3"  custom="{{true}}">
+            <view class="camera">
+                <image class="add-icon" src="/images/camera_add.png" />
+                <text class="add-text">选择图片</text>
+            </view>
+        </l-image-picker>
+    </view>
+    <view class="publish">
+        <l-button
+            size="long"
+            height="100"
+        >塞钱进红包</l-button>
+    </view>
+</view>

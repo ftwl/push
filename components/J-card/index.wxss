@@ -1,0 +1,20 @@
+/* components/J-card/index.wxss */
+
+.container{
+    background: #fff;
+    margin-top: 28rpx;
+    font-size: 28rpx;
+    padding:28rpx;
+}
+
+.container .title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+}
+
+.iconfont{
+    margin-right: 10rpx;
+    font-family: j-icon !important;
+}

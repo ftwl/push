@@ -1,0 +1,68 @@
+<!--pages/red-packet/index.wxml-->
+<view class="container">
+    <view class="packet">
+        <image src="https://tuiyixia.oss-cn-shanghai.aliyuncs.com/image/bg.png?OSSAccessKeyId=LTAINo4457UW83Sw&Expires=1561991537&Signature=oz0%2FvWSKaqXYaCxX8%2B9lue7UqtU%3D" />
+    </view>
+    <view wx:if="{{packet}}" class="packet-text">
+        <text class="wish">恭喜发财,大吉大利</text>
+        <l-price
+            unit="¥"
+            count="100.00"
+            unit-size="60"
+            count-size="60"
+            unit-color="#efda90"
+            count-color="#efda90"
+            l-unit-class="weight"
+            l-count-class="weight"
+        ></l-price>
+        <text class="wish">已存入零钱</text>
+    </view>
+    <view wx:else class="packet-text">
+        <text class="wish">红包已领完,您来晚了一步</text>
+    </view>
+    <view class="avatar">
+        <l-avatar  l-class-text="avatar-text" size="96" shape="circle" placement="bottom" open-data="{{['userAvatarUrl','userNickName']}}"></l-avatar>
+    </view>
+    <view wx:if="{{own}}" class="own">
+        <J-swiper  imgUrls="{{imgUrls}}"></J-swiper>
+    </view>
+    <view wx:if="{{merchant}}" class="model">
+        <view class="image-text">
+            <text>在商业世界里，哪有什么知足常乐！ 鮨匠日料诚招合伙人，年入百万不是梦，欢迎砸钱砸人。</text>
+            <view class="image-group">
+                <image src="/images/demo.jpg" />
+                <image src="/images/demo.jpg" />
+                <image src="/images/demo.jpg" />
+                <image src="/images/demo.jpg" />
+                <image src="/images/demo.jpg" />
+            </view>
+        </view>
+        <view class="discounts">
+            <text class="title">商家优惠</text>
+            <find-card
+                image="{{image}}"
+                title="上岛赫本时光 700㎡的花园餐厅，9.9元抢购100元优惠券，周六周日通用！"
+                presentPrice="{{9.90}}"
+                currentPrice="{{100}}"
+                sell="{{256}}"
+            ></find-card>
+        </view>
+    </view>
+    <view class="avatar-group">
+        <text class="title">已领取</text>
+        <view class="avatar">
+            <view class="icon">
+                <l-avatar  l-class="icon-image" shape="circle" size="68" src="/images/icon.jpg"></l-avatar>
+                <l-avatar  l-class="icon-image" shape="circle" size="68" src="/images/icon.jpg"></l-avatar>
+                <l-avatar  l-class="icon-image" shape="circle" size="68" src="/images/icon.jpg"></l-avatar>
+                <l-avatar  l-class="icon-image" shape="circle" size="68" src="/images/icon.jpg"></l-avatar>
+                <l-avatar  l-class="icon-image" shape="circle" size="68" src="/images/icon.jpg"></l-avatar>                                                                                                                                                                                                       
+                <l-avatar  l-class="icon-image" shape="circle" size="68" src="/images/icon.jpg"></l-avatar>
+            </view>
+            <l-icon l-class="right" size="27" name="right" color="#a7a7a7"></l-icon>
+        </view>
+    </view>
+    <view class="advertisement">
+        <image src="https://tuiyixia.oss-cn-shanghai.aliyuncs.com/image/ad.jpg?OSSAccessKeyId=LTAINo4457UW83Sw&Expires=1561991108&Signature=Ff34JoQcHWWS7z0caxxDa%2BKKJUs%3D" />
+    </view>
+</view>

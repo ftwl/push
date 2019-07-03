@@ -1,0 +1,82 @@
+<!--pages/ensure/index.wxml-->
+<view class="container">
+    <O-card
+        image="/images/order.png"
+        price="{{price}}"
+    ></O-card>
+    <view class="list top-border">
+        <l-list 
+            is-link="{{false}}"
+            title="购买数量">
+            <view slot="right-section">
+                <j-count-selector
+                    count="{{amount}}"
+                    min="1"
+                    max="3"
+                    bind:lintap="toggleCounter"
+                >
+                </j-count-selector>
+            </view>
+        </l-list>
+    </view>
+    <view class="list  edge">
+        <l-list
+            title="零钱抵扣"
+            is-link="{{false}}"
+        >
+            <view  slot="right-section">
+                <l-checkbox-group  bind:linchange="check">
+                    <l-checkbox custom="{{true}}" placement="right" color="#fc5466" value="{{count}}">
+                        <text  class="deduction">¥ {{count}}</text>
+                    </l-checkbox>
+                </l-checkbox-group>
+            </view>
+        </l-list>
+    </view>
+    <view class="list edge">
+        <l-list title="姓名" is-link="{{false}}">
+            <view slot="right-section">
+                <input class="custom-input" type="text" />
+            </view>
+        </l-list>
+        <l-list title="手机" is-link="{{false}}">
+            <view slot="right-section">
+                <input class="custom-input" type="number" />
+            </view>
+        </l-list>
+    </view>
+    <view class="time">
+        <text>支付剩余时间</text>
+        <l-countdown
+            time-type="second" 
+            time="1800"
+            status="{{true}}"
+            format="{%m}:{%s}"
+            l-class="countdown"
+            l-class-time="time-bg"
+        ></l-countdown>
+    </view>
+    <text class="tip">特价商品,不支持退款</text>
+    <view class="buy">
+        <view class="collect">
+            <text class="amount">共{{amount}}件</text>
+            <l-price
+                unit="¥"
+                count="{{price}}"
+                unit-color="#fc5366"
+                count-color="#fc5366"
+                unit-size="22"
+                count-size="28"
+            >
+               <text class="before" slot="before">合计</text>
+            </l-price>
+        </view>
+        <view class="button">
+            <l-button
+                shape="semicircle"
+                width="260"
+                height="80"
+            >提交订单</l-button>
+        </view>
+    </view>
+</view>
