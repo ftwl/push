@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "l-input":"/dist/input/index",
+    "l-button":"/dist/button/index",
+    "l-list":"/dist/list/index"
+  },
+  "navigationBarTitleText": "添加管理员"
+}

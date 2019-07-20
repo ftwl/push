@@ -110,6 +110,6 @@
         </view>
     </J-card>
     <view wx:if="{{!payed}}"class="pay">
-        <l-button  size="long" height="100">立即购买</l-button>
+        <l-button  size="long" height="100">立即支付</l-button>
     </view>
 </view>

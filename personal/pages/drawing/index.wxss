@@ -13,3 +13,25 @@
   height: 60rpx;
   font-size: 24rpx;
 }
+.drawing-container .drawing .drawing-text {
+  font-size: 26rpx;
+  font-weight: bold;
+  margin-left: 28rpx;
+}
+.drawing-container .drawing .figure {
+  font-size: 24rpx;
+  color: #999999;
+  margin-top: 20rpx;
+}
+.drawing-container .drawing .figure .title {
+  margin-left: 28rpx;
+  margin-right: 20rpx;
+}
+.drawing-container .btn-draw {
+  width: 100%;
+  margin-top: 140rpx;
+  text-align: center;
+}
+.rmb-symbol {
+  font-size: 22rpx;
+}

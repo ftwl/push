@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "l-input":"/dist/input/index",
+    "O-card":"/components/O-card/index",
+    "l-button":"/dist/button/index"
+  },
+  "navigationBarTitleText": "核销结果"
+}

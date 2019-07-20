@@ -1,0 +1,36 @@
+.check-container {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+}
+.check-container .scan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 438rpx;
+  border-top: 1rpx solid #cfcfcf;
+}
+.check-container .scan-container .scan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.check-container .scan-container .scan .scan-text {
+  margin-top: 40rpx;
+  font-size: 28rpx;
+}
+.check-container .scan-input {
+  margin: 30rpx 0;
+}
+.check-container .scan-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.scan-icon {
+  font-family: j-icon !important;
+}

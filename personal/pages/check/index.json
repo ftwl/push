@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "l-icon":"/dist/icon/index",
+    "l-input":"/dist/input/index",
+    "l-button":"/dist/button/index"
+  },
+  "navigationBarTitleText": "核销订单"
+}

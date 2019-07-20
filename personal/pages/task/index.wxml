@@ -1,0 +1,36 @@
+<!--personal/pages/task/index.wxml-->
+<view class="task-container">
+    <view class="task-step">
+        <view class="task-title">
+            <text class="title-left">签到赢金币</text>
+            <view class="title-right">
+                <l-icon name="coin-copy" size="56" color="#f0c364" l-class="coin"></l-icon>
+                <text>999</text>
+            </view>
+        </view>
+        <l-steps l-class="coin-steps" active-index="{{activeIndex}}">
+            <block wx:for="{{task}}" wx:key="{{index}}">
+                <l-step l-title-class="{{activeIndex-1>=index?'active-title':'item-title'}}" l-line-active-class="line-active" title="{{item.day}}天" custom>
+                    <view class="{{activeIndex-1<index?'item':'item-active'}}">+{{item.coin}}</view>
+                </l-step>
+            </block>
+        </l-steps>
+    </view>
+    <view class="list-group">
+        <text class="list-title">任务</text>
+        <view class="list">
+            <l-list  l-class="list-height"  wx:for="{{rules}}" wx:key="{{index}}" is-link="{{false}}">
+                <view class="left-section" slot="left-section">
+                    <view class="title">
+                        <text class="title-info">{{item.title}}</text>
+                        <text class="earnings">+{{item.coin}}</text>
+                    </view>
+                    <text class="desc">{{item.desc}}</text>
+                </view>
+                <view class="right-section" slot="right-section">
+                    <l-button size="mini" width="130" height="48" shape="semicircle"  plain="{{true}}">去完成</l-button>
+                </view>
+            </l-list>
+        </view>
+    </view>
+</view>

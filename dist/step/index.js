@@ -5,9 +5,11 @@ Component({
   externalClasses: [
     'l-class',
     'l-step-class',
+    'l-step-active-class',
     'l-title-class', 
     'l-describe-class',
-    'l-line-class'
+    'l-line-class',
+    'l-line-active-class'
   ],
   relations: {
     '../steps/index': {

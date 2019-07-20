@@ -39,7 +39,14 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 100rpx;
+}
+.container .publish .submit-btn {
+  background: #fc5366;
+  color: #fff;
+  border-radius: 0rpx;
+}
+.container .publish .btnhover {
+  background: #ff8391;
 }
 .camera {
   width: 100%;

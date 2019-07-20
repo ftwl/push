@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "l-avatar":"/dist/avatar/index"
+    "l-avatar":"/dist/avatar/index",
+    "l-popup":"/dist/popup/index"
   },
   "navigationBarBackgroundColor": "#ff3e62",
   "navigationBarTextStyle": "white"

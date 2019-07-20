@@ -1,0 +1,31 @@
+<!--personal/pages/merchant/index.wxml-->
+<view class="merchant-container">
+    <view class="merchant-card">
+        <text class="title">胡桃里</text>
+        <view class="merchant-detail">
+            <view class="detail">
+                <view class="detail-group">
+                    <view class="detail-cell"  wx:for="{{detail}}" wx:key="{{index}}">
+                        <text class="detail-title">{{item.title}}</text>
+                        <view class="detail-count">
+                            <text class="unit" wx:if="{{item.price}}">¥</text>
+                            <text wx:if="{{item.price}}">{{item.price}}</text>
+                            <text wx:else>{{item.count}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="avatar">
+                <l-avatar size="98" open-data="{{['userAvatarUrl']}}"></l-avatar>
+            </view>
+        </view>
+    </view>
+    <view class="grid-container">
+        <l-grid  row-num="4">
+            <l-grid-item  l-grid-item="grid-item" wx:for="{{options}}" wx:key="{{index}}" key="{{index}}" slot="{{index}}">
+                 <l-icon size="45" color="#333" name="{{item.icon}}" l-class="iconfont" />
+                 <view class="grid-text">{{item.text}}</view>
+            </l-grid-item>
+        </l-grid>
+    </view>
+</view>

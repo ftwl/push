@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "l-steps":"/dist/steps/index",
+    "l-step":"/dist/step/index",
+    "l-icon":"/dist/icon/index",
+    "l-list":"/dist/list/index",
+    "l-button":"/dist/button/index"
+  },
+  "navigationBarTitleText": "任务中心"
+}

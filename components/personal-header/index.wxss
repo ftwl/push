@@ -30,7 +30,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    top:50rpx;
+    top:52rpx;
     width:93%;
     height:112rpx;
     background: linear-gradient(45deg,#e2e2e2 ,#eaeaea);

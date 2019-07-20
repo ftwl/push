@@ -1,4 +1,12 @@
 .container{
+    width: 100%;
+    .map-bg{
+        position: relative;
+        top: 50%;
+        margin-top: -25px;
+        display: flex;
+        background: #fff;
+    }
     .user-card{
         position: absolute;
         top:88rpx;
@@ -61,4 +69,46 @@
         right: 28rpx;
         bottom:42rpx;
     }
+}
+
+.packet-container{
+    width: 498rpx;
+    .packet{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-image:url('https://tuiyixia.oss-cn-shanghai.aliyuncs.com/image/packet-bg.png?OSSAccessKeyId=LTAINo4457UW83Sw&Expires=2876821637&Signature=u79OQ%2FsN4qAzlVIdSDodjLXdKvU%3D'); 
+        width: 100%;
+        height: 790rpx;
+        background-size: 100%;
+        .title{
+            font-size: 36rpx;
+            color: #efda90;
+            height: 120rpx;
+            line-height: 120rpx;
+        }
+        image{
+            width: 146rpx;
+            height: 146rpx;
+            margin-top: 180rpx;
+        }
+    }
+    .close{
+        width: 100%;
+        text-align: center;
+        margin-top: 34rpx;
+        image{
+            width: 80rpx;
+            height: 80rpx;
+        }
+    }
+}
+
+.avatar-packet{
+    margin-top: 70rpx;
+}
+.avatar-text{
+    color: #efda90 !important;
+    line-height: 20rpx !important;
 }

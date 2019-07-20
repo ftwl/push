@@ -1,6 +1,8 @@
 {
   "usingComponents": {
-  
+    "l-input":"/dist/input/index",
+    "l-price":"/dist/price/index",
+    "l-button":"/dist/button/index"
   },
   "navigationBarTitleText": "提现"
 }

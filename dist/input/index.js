@@ -86,6 +86,14 @@ Component({
       type: String,
       value: ''
     },
+    fontSize:{
+      type:Number,
+      value:28
+    },
+    left:{
+      type:Number,
+      value:0
+    }
   },
 
   /**

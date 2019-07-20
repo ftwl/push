@@ -1,0 +1,11 @@
+<!--personal/pages/service/index.wxml-->
+<view class="service-container">
+    <view class="list-group">
+        <l-list title="电话客服"></l-list>
+        <l-list title="官方公众号"></l-list>
+        <l-list title="客服微信号"></l-list>
+    </view>
+    <view class="footer">
+        <text>工作时间10:00-22:00</text>
+    </view>
+</view>

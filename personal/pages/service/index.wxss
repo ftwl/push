@@ -1,0 +1,16 @@
+.service-container {
+  width: 100%;
+  border-top: 1rpx solid #dedede;
+}
+.service-container .list-group {
+  padding-left: 28rpx;
+  padding-right: 28rpx;
+  background: #ffffff;
+}
+.service-container .footer {
+  width: 100%;
+  height: 90rpx;
+  text-align: center;
+  line-height: 90rpx;
+  font-size: 28rpx;
+}

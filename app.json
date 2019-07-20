@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/publish/index",
     "pages/find/index",
-    "pages/personal/index"
+    "pages/personal/index",
+    "pages/login/index"
   ],
   "subPackages": [
     {
@@ -35,7 +36,14 @@
         "pages/ integral/index",
         "pages/business-vip/index",
         "pages/super-vip/index",
-        "pages/drawing/index"
+        "pages/drawing/index",
+        "pages/merchant/index",
+        "pages/check/index",
+        "pages/admin-add/index",
+        "pages/check-res/index",
+        "pages/service/index",
+        "pages/task/index",
+        "pages/invation/index"
       ]
     }
   ],

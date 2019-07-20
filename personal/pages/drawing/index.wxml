@@ -3,5 +3,19 @@
     <text class="drawing-title">提现到微信零钱</text>
     <view class="drawing">
         <text class="drawing-text">提现金额</text>
+        <l-input label-width="10" type="digit" left="20"  fontSize="32"  clear="{{true}}">
+            <view slot="left" class="rmb-symbol">¥</view>
+        </l-input>
+        <view class="figure">
+            <text class="title">可提现最大金额</text>
+            <l-price
+                unit="¥"
+                count="{{count}}"
+                unit-size="22"
+            ></l-price>
+        </view>
+    </view>
+    <view class="btn-draw">
+        <l-button size="large" width="694" height="88" shape="semicircle">提现</l-button>
     </view>
 </view>

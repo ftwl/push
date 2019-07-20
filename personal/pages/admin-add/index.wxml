@@ -1,0 +1,11 @@
+<!--personal/pages/admin-add/index.wxml-->
+<view class="add-container">
+    <view class="search-input">
+        <l-input wx:if="{{search}}" type="number" clear="{{true}}" label="手机号"></l-input>
+        <l-list  l-class="res-list"  title="粉色兔子"  l-class-image="res-avatar" image="/images/icon.jpg" desc="152666666" is-link="{{false}}"></l-list>
+    </view>
+    <view class="btn">
+        <l-button wx:if="{{search}}" disabled="{{true}}" shape="semicircle" size="large">查询</l-button>
+        <l-button  shape="semicircle" size="large">确认添加</l-button>
+    </view>
+</view>

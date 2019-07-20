@@ -1,0 +1,8 @@
+<!--pages/login/index.wxml-->
+<view class="login-container">
+    <view class="icon">
+        <image src="https://tuiyixia.oss-cn-shanghai.aliyuncs.com/image/fengteng.png" />
+    </view>
+    <button class="btn primary" open-type="getPhoneNumber" hover-class="btnhover"  bindgetphonenumber="wxRegister">微信快速登陆</button>
+    <button class="btn ghost" hover-class="ghost-hover">使用手机号登陆</button>
+</view>

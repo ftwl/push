@@ -5,6 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
+    userRules: [{
+      required: true,
+      message:'该字段不能为空！'
+    }],
     show:false,
     text:'',
     itemList: [
@@ -35,6 +39,9 @@ Page({
       },
       {
         name:'女'
+      },
+      {
+        name:'不填写'
       }
     ],
 // 职业
@@ -45,6 +52,12 @@ Page({
         name:'白领'
       }
     ]
+  },
+  linvalidate(e){
+    console.log(e.detail.errors)
+  },
+  formSubmit(e){
+    console.log('form发生了submit事件，携带数据为：', e.detail.value)
   },
 
   // 位置范围

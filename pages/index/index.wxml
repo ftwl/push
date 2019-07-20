@@ -4,8 +4,11 @@
           longitude="{{longitude}}" 
           latitude="{{latitude}}" 
           scale="{{scale}}"
-          show-location
+          show-location="{{false}}"
+          enable-zoom="{{true}}"
           circles="{{circles}}"
+          markers="{{markers}}"
+          bindmarkertap="markertap"
           style="width: 100%; height: 100vh;"></map>
           <view class="user-card">
               <image src="/images/crown.svg" />
@@ -15,7 +18,19 @@
                 <open-data class="city" type="userCity" lang="zh_TW"></open-data>
               </view>
           </view>
-          <image class="refresh" src="/images/map-icon/refresh.svg" />
+          <image  animation="{{animationRefresh}}" bindtap="refresh" class="refresh" src="/images/map-icon/refresh.svg" />
           <image class="vip" src="/images/map-icon/vip.svg"/>
           <image class="package" src="/images/map-icon/package.svg"/>
+          <l-popup  content-align="center" show="{{showPacket}}">
+            <view class="packet-container"  locked="{{true}}">
+              <view class="packet">
+                <l-avatar size="96"  l-class="avatar-packet"  l-class-text="avatar-text" placement="bottom" open-data="{{['userAvatarUrl','userNickName']}}"></l-avatar>
+                <text class="title">这个夏天与你相遇</text>
+                <image animation="{{animationPacket}}" bindtap="openPacket" src="https://tuiyixia.oss-cn-shanghai.aliyuncs.com/image/open.png?OSSAccessKeyId=LTAINo4457UW83Sw&Expires=1694223765&Signature=CrK5U%2B%2FvTAQzW0FGeET9WpUrIsw%3D"/>
+              </view>
+              <view class="close">
+                <image bindtap="closePacket" src="https://tuiyixia.oss-cn-shanghai.aliyuncs.com/image/close.png?OSSAccessKeyId=LTAINo4457UW83Sw&Expires=1575963183&Signature=NYvCqqHJpuUXQYnt72MXBTacf3I%3D" />
+              </view>
+            </view>
+          </l-popup>
 </view>

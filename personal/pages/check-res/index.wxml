@@ -1,0 +1,26 @@
+<!--personal/pages/check-res/index.wxml-->
+<view class="res-container">
+    <l-input  l-class="res-input" fontSize="34" label="核销编码" disabled="{{true}}" value="2343445"></l-input>
+    <O-card image="/images/order.png" price="90"></O-card>
+    <view class="list-group">
+        <view class="list">
+            <text class="title">订单编号</text>
+            <text class="info">596856369</text>
+        </view>
+        <view class="list">
+            <text class="title">支付时间</text>
+            <text class="info">2019-5-6 13:19:16</text>
+        </view>
+        <view class="list">
+            <text class="title">姓名</text>
+            <text class="info">张成淇</text>
+        </view>
+        <view class="list">
+            <text class="title">手机号码</text>
+            <text class="info">15155555555</text>
+        </view>
+        <view class="btn">
+            <l-button width="694" shape="semicircle" size="large">确定核销</l-button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,15 @@
+<!--personal/pages/check/index.wxml-->
+<view class="check-container">
+    <view class="scan-container">
+        <view class="scan" bindtap="scanCode">
+            <l-icon size="152" name="saomiao" color="#333" l-class="scan-icon"></l-icon>
+            <text class="scan-text">扫核销码</text>
+        </view>
+    </view>
+    <view class="scan-input">
+        <l-input type="number" label="核销编码" clear="{{true}}"></l-input>
+    </view>
+    <view class="scan-btn">
+        <l-button size="large" shape="semicircle">查询</l-button>
+    </view>
+</view>

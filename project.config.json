@@ -4,14 +4,14 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
-		"enhance": false,
+		"enhance": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
-		"nodeModules": true,
+		"nodeModules": false,
 		"autoAudits": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
@@ -23,8 +23,8 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.7.2",
-	"appid": "wx46094f4a9de1d527",
+	"libVersion": "2.7.4",
+	"appid": "wxfa6ef5a3273f93b8",
 	"projectname": "push",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -50,110 +50,12 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 14,
+			"current": 0,
 			"list": [
 				{
 					"id": 0,
-					"name": "发布",
-					"pathName": "pages/publish/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "发现",
-					"pathName": "pages/find/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "我的",
-					"pathName": "pages/personal/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 3,
-					"name": "订单列表",
-					"pathName": "order/pages/details/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 4,
-					"name": "发现详情",
-					"pathName": "find/pages/find-details/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 5,
-					"name": "订单详情",
-					"pathName": "order/pages/order-details/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 6,
-					"name": "订单确认",
-					"pathName": "order/pages/ensure/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 7,
-					"name": "个人信息",
-					"pathName": "personal/pages/personal-info/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "红包详情",
-					"pathName": "packet/pages/red-packet/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "零钱",
-					"pathName": "personal/pages/change/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "积分",
-					"pathName": "personal/pages/ integral/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 11,
-					"name": "商务会员",
-					"pathName": "personal/pages/business-vip/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "至尊会员",
-					"pathName": "personal/pages/super-vip/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "兴趣",
-					"pathName": "personal/pages/interest/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 14,
-					"name": "提现",
-					"pathName": "personal/pages/drawing/index",
+					"name": "登陆",
+					"pathName": "pages/login/index",
 					"query": "",
 					"scene": null
 				}
