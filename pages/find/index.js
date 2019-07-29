@@ -1,18 +1,26 @@
 // pages/find/index.js
+import {FindModel} from '../../models/find'
+const findModel = new FindModel()
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    newProducts:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
 
+   // async 改写 promise
+  async onLoad (options) {
+    const res = await findModel.getNewProducts(app.globalData.token)
+    this.setData({
+      newProducts:res.data
+    })
   },
 
   /**

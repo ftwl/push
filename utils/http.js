@@ -1,5 +1,6 @@
 import {config} from '../config'
 
+
 const tips = {
     1:'抱歉出现一个错误',
     1005:'您的开发者key不正确,请填写正确的开发者key',
@@ -13,21 +14,22 @@ const tips = {
 // 解构
 
 class HTTP {
-    request({url,data={},method='GET'}){
+    request({url,data={},method='GET',token}){
         return new Promise((resolve,reject)=>{
-            this._request(url,resolve,reject,data,method)
+            this._request(url,resolve,reject,data,method,token)
         })
     }
 
-    _request(url,resolve,reject,data={},method='GET'){
+    _request(url, resolve, reject, data = {}, method = 'GET', token=''){
         // url ,data,method
         wx.request({
             url:config.api_base_url+url,
             method,
             data,
             header:{
-                'content-type':'application/json',
-                'appkey':config.appkey
+                'content-type': 'application/json',
+                'appkey': config.appkey,
+                'Authorization': `Bearer ${token}`
             },
             success: (res)=>{
                 // code is not String
